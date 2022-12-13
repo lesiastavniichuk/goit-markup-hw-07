@@ -305,9 +305,7 @@ max-width: 300px;
 
 /*------DEVELOPMENT------ */
 
-.development{
- 
-}
+
 
 .work-list-item{
   width: calc((100%-60px)/3);
