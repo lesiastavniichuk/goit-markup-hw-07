@@ -1,15 +1,14 @@
 .work-list-item{
-  width: calc((100%-60px)/3);
+  width: calc((100% - 60px)/3);
   margin-right: 30px;
-}
-
-.work-list-item:nth-child(3n){
+  &:nth-child(3n){
   margin-right: 0px;
+}
 }
 
 
 .heading{
-  font-weight: 700;
+font-weight: 700;
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
@@ -20,21 +19,19 @@ letter-spacing: 0.03em;
   display: flex;
   padding-top: 50px;
   padding-bottom: 94px;
-}
-
-.work-thumb{
+  &-thumb{
   position: relative;
 }
-
-.work-actions{
+ &-actions{
   position: absolute;
   bottom: 0;
   width: 370px;
 }
+}
 
 .devel-text{
 
-  display: flex;
+display: flex;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;

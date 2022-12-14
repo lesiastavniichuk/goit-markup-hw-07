@@ -1,16 +1,19 @@
-.btn{
-  font-family: 'Roboto'sans-serif;
+.btn {
+  font-family: "Roboto" sans-serif;
   cursor: pointer;
   color: #212121;
   letter-spacing: 0.06em;
   padding: 10px 24px;
   border: transparent;
- transition: color 250ms var(--timing-function), 
+  transition: color 250ms var(--timing-function),
   background-color 250ms var(--timing-function);
-}
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
 
-.btn:hover,
-.btn:focus{
-  color: var(--accent-color);
- background-color: var(--primary-link-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    background-color: var(--primary-link-color);
+  }
 }

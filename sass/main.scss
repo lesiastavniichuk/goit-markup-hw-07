@@ -1,77 +1,43 @@
-@import'./base/reset';
-@import'./base/_common.sccs';
+@import "./base/reset";
+@import "./base/common";
 
-@import'./utils/vars';
+@import "./utils/vars";
 
-@import'./components/container.scss';
-@import'./components/btn';
-@import'./components/logo';
+@import "./components/container.scss";
+@import "./components/btn";
+@import "./components/logo";
 
-@import'./layouts/header';
+@import "./layouts/header";
 
-@import'./layouts/hero';
-@import'./layouts/development';
-@import'./layouts/feature';
-@import'./layouts/team';
-@import './layouts/regular-customers';
-@import './layouts/footer';
-@import './layouts/modal';
+@import "./layouts/hero";
+@import "./layouts/development";
+@import "./layouts/feature";
+@import "./layouts/team";
+@import "./layouts/regular-customers";
+@import "./layouts/footer";
+@import "./layouts/modal";
 
-@import './layouts/portfolio-hero';
-@import './layouts/portfolio-our-works';
-
-
-
-
-
+@import "./layouts/portfolio-hero";
+@import "./layouts/portfolio-our-works";
 
 /*------------------HEADER------------------*/
 
-
-
-
 /* -------------------HERO------------------- */
-
-
-
 
 /*------FEATURE------ */
 
-
-
-
 /*------DEVELOPMENT------ */
-
-
-
-
-
 
 /*------TEAM------ */
 
-
-
-
 /*-----------REGULAR CUSTOMERS----------- */
-
-
-
 
 /* --------------------------- PORTFOLIO------------------------- */
 
 /* --------------------------- HERO------------------------- */
 
-
-
 /* --------------------------- OUR WORKS------------------------- */
-
-
 
 /*------FOOTER------ */
 
-
-
-
-
 /*------MODAL------ */
-

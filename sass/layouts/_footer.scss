@@ -59,12 +59,10 @@ display: flex;
   width: 44px;
   height: 44px;
   margin-bottom: 30px;
-  
-}
-
-.footer-soc-items:not(:last-child)
+  &:not(:last-child)
 {
   margin-right: 10px;
+}
 }
 
 .footer-soc-link{
@@ -78,12 +76,13 @@ display: flex;
  background: rgba(255, 255, 255, 0.1);
  transition: color 250ms var(--timing-function), 
   background-color 250ms var(--timing-function);
-}
-
-.footer-soc-link:hover{
+  &:hover{
   background-color:var(--primary-link-color);
   color: var(--accent-color);
 }
+}
+
+
 
 .footer-soc-icons{
   fill: currentColor}
@@ -98,9 +97,7 @@ display: flex;
 }
 .footer-mail{
   display: block;
-}
-
-.footer-mail > p{
+  & > p{
 font-weight: 700;
 font-size: 14px;
 line-height: 16px;
@@ -109,8 +106,7 @@ text-transform: uppercase;
 color: #FFFFFF;
 margin-bottom: 20px;
   }
-
-.footer-mail-btn>p{
+  &-btn>p{
   font-weight: 700;
 font-size: 14px;
 line-height: 16px;
@@ -120,6 +116,11 @@ color: #FFFFFF;
 margin-bottom: 20px;
 opacity: 0;
 }
+}
+
+
+
+
 
 .right-footer-input{
   width: 358px;
@@ -129,8 +130,7 @@ opacity: 0;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 color: #FFFFFF;
-}
-.right-footer-input::placeholder{
+&::placeholder{
 font-weight: 400;
 font-size: 16px;
 line-height: 1.25;
@@ -138,6 +138,8 @@ align-items: center;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
+}
+
 
 .btn-submit-footer{
   display: flex;
