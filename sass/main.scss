@@ -1,3 +1,77 @@
-body{
-    background-color: red;
-}
+@import'./base/reset';
+@import'./base/_common.sccs';
+
+@import'./utils/vars';
+
+@import'./components/container.scss';
+@import'./components/btn';
+@import'./components/logo';
+
+@import'./layouts/header';
+
+@import'./layouts/hero';
+@import'./layouts/development';
+@import'./layouts/feature';
+@import'./layouts/team';
+@import './layouts/regular-customers';
+@import './layouts/footer';
+@import './layouts/modal';
+
+@import './layouts/portfolio-hero';
+@import './layouts/portfolio-our-works';
+
+
+
+
+
+
+/*------------------HEADER------------------*/
+
+
+
+
+/* -------------------HERO------------------- */
+
+
+
+
+/*------FEATURE------ */
+
+
+
+
+/*------DEVELOPMENT------ */
+
+
+
+
+
+
+/*------TEAM------ */
+
+
+
+
+/*-----------REGULAR CUSTOMERS----------- */
+
+
+
+
+/* --------------------------- PORTFOLIO------------------------- */
+
+/* --------------------------- HERO------------------------- */
+
+
+
+/* --------------------------- OUR WORKS------------------------- */
+
+
+
+/*------FOOTER------ */
+
+
+
+
+
+/*------MODAL------ */
+
