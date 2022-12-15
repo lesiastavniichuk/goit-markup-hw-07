@@ -6,14 +6,9 @@
 }
 }
 
-
 .heading{
-font-weight: 700;
-font-size: 36px;
-line-height: 1.17;
-text-align: center;
-letter-spacing: 0.03em;
-}
+@include font(36, 700, 1.17, 0.03);
+text-align: center;}
 
 .work{
   display: flex;
@@ -30,20 +25,15 @@ letter-spacing: 0.03em;
 }
 
 .devel-text{
-
+@include font(14, 700, 1.14, 0.03);
+text-align: center;
 display: flex;
 font-family: 'Roboto';
 font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-text-align: center;
-letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #FFFFFF;
 background: rgba(47, 48, 58, 0.8);
 color: #FFFFFF;
 padding: 27px;
 justify-content: center;
-
 }

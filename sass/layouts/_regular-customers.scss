@@ -7,24 +7,21 @@
 }
 
 .custoumer-list {
+  @include font(36, null, 1.16, null);
   display: flex;
-  font-size: 36px;
-  line-height: 1.16;
   margin-top: 50px;
   padding: 0;
   text-align: center;
   margin-top: 50px;
-  display: flex;
   & li + li {
     margin-left: 30px;
   }
 }
 
 .customer-link {
-  display: flex;
+  @extend %flex-alighn;
   box-sizing: border-box;
   justify-content: center;
-  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;

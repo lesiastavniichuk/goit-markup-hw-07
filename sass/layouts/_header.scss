@@ -5,27 +5,25 @@
 }
 
 header .container {
+  @extend %flex-alighn;
   position: relative;
-  display: flex;
-  align-items: center;
   border: none;
 }
 
- .header-list {
+.header-list {
   display: flex;
   height: 80px;
   &-cont {
-  display: flex;
-  align-items: center;
-  height: 80px;
-  margin-right: 15px;
-}
- &-item {
-  margin-right: 30px;
-}
-&-item:last-child {
-  margin-right: 0;
-}
+    @extend %flex-alighn;
+    height: 80px;
+    margin-right: 15px;
+  }
+  &-item {
+    margin-right: 30px;
+  }
+  &-item:last-child {
+    margin-right: 0;
+  }
 }
 
 /* ----------------------LOGO---------------------- */
@@ -36,54 +34,51 @@ header .container {
   color: #000000;
   margin-right: 93px;
   &-accent {
-  color: var(--primary-link-color);
+    color: var(--primary-link-color);
+  }
 }
-}
-
 
 /* ----------------------NAV---------------------- */
 .header-link {
+  @include font(14, 500, 1.14, 0.02);
   position: relative;
   display: block;
   text-decoration: none;
   padding: 32px 0px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: #212121;
   transition: color 250ms var(--timing-function);
   &:hover,
   &:focus {
-  color: var(--primary-link-color);
-}
+    color: var(--primary-link-color);
+  }
 }
 
 .link-curreent {
   color: var(--primary-link-color);
   &.studia::after {
-  position: absolute;
-  align-items: center;
-  bottom: 0;
-  content: "";
-  display: block;
-  width: 48px;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--primary-link-color);
-  transition: 250ms var(--timing-function);}
+    position: absolute;
+    align-items: center;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--primary-link-color);
+    transition: 250ms var(--timing-function);
+  }
   &.portfolio::after {
-  position: absolute;
-  align-items: center;
-  bottom: 0;
-  content: "";
-  display: block;
-  width: 76px;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--primary-link-color);
-  transition: 250ms var(--timing-function);
-}
+    position: absolute;
+    align-items: center;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 76px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--primary-link-color);
+    transition: 250ms var(--timing-function);
+  }
 }
 
 .studia {
@@ -92,9 +87,6 @@ header .container {
 .portfolio {
   margin-right: 50px;
 }
-
-
-
 
 /* ------------------HEADER-CONTAKT------------------ */
 
@@ -106,22 +98,17 @@ header .container {
 }
 
 .header-tel-mail {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @extend %flex-alighn;
+  @include font(14, 500, 1.14, 0.02);
   color: #757575;
   transition: color 250ms var(--timing-function);
   &:hover,
   &:focus {
-  color: var(--primary-link-color);
-}
+    color: var(--primary-link-color);
+  }
 }
 
 .icon-mail {
   fill: currentColor;
   margin-right: 10px;
 }
-

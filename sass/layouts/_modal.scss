@@ -56,11 +56,8 @@
     color: #757575;
   }
   &-head {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    @include font(20, 700, 1.15, 0.03);
     text-align: center;
-    letter-spacing: 0.03em;
     color: #212121;
     margin-bottom: 30px;
   }
@@ -100,10 +97,7 @@
     fill: #2196f3;
   }
   &::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
+    @include font(12, 400, 1.17, 0.01);
     color: rgba(117, 117, 117, 0.5);
   }
   &-wrapper {
@@ -115,23 +109,17 @@
 .form-field {
   margin-bottom: 28px;
   & label {
+    @include font(12, 400, 1.17, 0.01);
     display: block;
     margin-bottom: 4px;
     font-family: "Roboto";
     font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
     color: #757575;
   }
 }
 
 .modal-text {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
+  @include font(12, 400, 1.17, 0.01);
   color: rgba(117, 117, 117, 0.5);
   resize: none;
   width: 100%;
@@ -147,14 +135,11 @@
 }
 
 .label-coment {
+  @include font(12, 400, 1.17, 0.01);
   display: block;
   margin-bottom: 4px;
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
   color: #757575;
 }
 
@@ -169,10 +154,10 @@
 /* -----------checkbox----------- */
 
 .modal-politik-label {
-  display: flex;
+  @extend %flex-alighn;
   margin-left: 12px;
-  align-items: center;
 }
+
 label.modal-politik-label::before {
   content: "";
   width: 16px;
@@ -185,22 +170,16 @@ label.modal-politik-label::before {
 .checkbox {
   appearance: none;
   &-link {
+    @include font(14, 400, 1.71, 0.03);
     display: inline;
     color: var(--primary-link-color);
     margin-left: 3px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
   }
   &-text {
+    @include font(14, 400, 1.71, 0.03);
     display: inline;
     color: #757575;
     margin-left: 3px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
   }
   &:checked + label::before {
     border: none;

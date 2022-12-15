@@ -1,8 +1,8 @@
 @import "./base/reset";
 @import "./base/common";
-
+@import './utils/mixin';
 @import "./utils/vars";
-
+@import "./utils/placeholder";
 @import "./components/container.scss";
 @import "./components/btn";
 @import "./components/logo";
