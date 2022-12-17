@@ -1,0 +1,45 @@
+.picture{
+padding-top: 200px;
+padding-bottom: 200px;
+padding-left: 15px;
+text-align: center;
+background-color: var(--foncolor);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../img/hero_bg.jpg);
+min-width: 1600px;
+margin: auto;
+}
+
+.picture__title{
+@include font(44, null, 1.36, 0.06);
+text-align: center;
+text-transform: uppercase;
+color: var(--accent-color);
+margin-bottom: 30px;
+width: 696px;
+margin: 0 auto;
+display: block;
+} 
+
+.picture__btn {
+  font-family: "Roboto" sans-serif;
+  cursor: pointer;
+  color: #212121;
+  letter-spacing: 0.06em;
+  padding: 10px 24px;
+  border: transparent;
+  transition: color 250ms var(--timing-function),
+  background-color 250ms var(--timing-function);
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    background-color: var(--primary-link-color);
+  }
+}
+
