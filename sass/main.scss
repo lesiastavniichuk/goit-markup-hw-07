@@ -1,24 +1,24 @@
 @import "./base/reset";
 @import "./base/common";
-@import './utils/mixin';
-@import "./utils/vars";
+@import "./utils/mixin";
+@import "./utils/variables";
 @import "./utils/placeholder";
 @import "./components/container.scss";
 @import "./components/btn";
 @import "./components/logo";
+@import "./components/heading";
+@import "./components/header";
 
-@import "./layouts/header";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/benefits";
+@import "./components/team";
+@import "./components/customers";
+@import "./components/footer";
+@import "./components/modal";
 
-@import "./layouts/hero";
-@import "./layouts/development";
-@import "./layouts/feature";
-@import "./layouts/team";
-@import "./layouts/regular-customers";
-@import "./layouts/footer";
-@import "./layouts/modal";
-
-@import "./layouts/portfolio-hero";
-@import "./layouts/portfolio-our-works";
+@import "./components/portfolio-hero";
+@import "./components/portfolio-our-works";
 
 /*------------------HEADER------------------*/
 
