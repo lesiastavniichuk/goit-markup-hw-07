@@ -1,0 +1,37 @@
+.about {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+
+.about__item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+
+.about__thumb {
+  position: relative;
+}
+
+.about__actions {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+}
+
+.about__text {
+  @include font(14, 700, 1.14, 0.03);
+  text-align: center;
+  display: flex;
+  font-family: "Roboto";
+  font-style: normal;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
+  padding: 27px;
+  justify-content: center;
+}

@@ -1,0 +1,5 @@
+.heading {
+  @include font(36, 700, 1.17, 0.03);
+  text-align: center;
+  color: #212121;
+}
