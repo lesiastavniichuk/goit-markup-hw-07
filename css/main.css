@@ -323,17 +323,6 @@ header .container {
   justify-content: center;
 }
 
-.benefits {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-.benefits .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .benefits__icon-antenna::before {
   background-image: url(../img/SVG/antenna.svg);
 }
@@ -350,12 +339,45 @@ header .container {
   background-image: url(../img/SVG/astronaut.svg);
 }
 
-.benefits__list {
-  display: flex;
+.benefits {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
-.benefits__list li + li {
-  margin-left: 30px;
+.benefits .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+@media screen and (min-width: 480px) {
+  .benefits .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits .container {
+    width: 1200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.benefits__item {
   width: 270px;
+}
+
+.benefits__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .benefits__item::before {
@@ -369,15 +391,6 @@ header .container {
   background-size: 65.32px 70px;
 }
 
-.benefits__text {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--second-link-color);
-  width: 270px;
-}
-
 .benefits__name {
   font-weight: 700;
   font-size: 14px;
@@ -385,6 +398,20 @@ header .container {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .benefits__name {
+    text-align: center;
+  }
+}
+
+.benefits__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--second-link-color);
+  width: 270px;
 }
 
 .team {
