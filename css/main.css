@@ -373,11 +373,23 @@ header .container {
 }
 
 .benefits__item {
-  width: 270px;
+  outline: 1px solid black;
+}
+@media screen and (max-width: 767px) {
+  .benefits__item {
+    width: 100%;
+  }
 }
 
-.benefits__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .benefits__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .benefits__item::before {
