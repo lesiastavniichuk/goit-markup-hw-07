@@ -1,15 +1,48 @@
-.picture{
-padding-top: 200px;
-padding-bottom: 200px;
+.hero .container{
+
 padding-left: 15px;
 text-align: center;
 background-color: var(--foncolor);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
-background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../img/hero_bg.jpg);
-min-width: 1600px;
 margin: auto;
+   @media screen and (min-width: 480px) {
+    padding-bottom: 118px;
+background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+rgba(47, 48, 58, 0.4)),url(../img/hero_bg_mob.jpg);
+@include retina{
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+rgba(47, 48, 58, 0.4)),url(../img/hero_bg_mob-2x.jpg);
+}
+  }
+
+
+ @media screen and (min-width: 768px) {
+
+width: 100%;
+padding-bottom: 118px;
+background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+rgba(47, 48, 58, 0.4)),url(../img/hero_bg_tab.jpg);
+
+@include retina{
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+rgba(47, 48, 58, 0.4)),url(../img/hero_bg_tab-2x.jpg);
+}
+}
+   @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+padding-bottom: 200px;
+width: 100%; 
+background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+rgba(47, 48, 58, 0.4)),url(../img/hero_bg.jpg);
+
+@include retina{
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+rgba(47, 48, 58, 0.4)),url(../img/hero_bg-2x.jpg);
+}
+  }
+
 }
 
 .picture__title{
@@ -17,24 +50,23 @@ margin: auto;
 text-align: center;
 text-transform: uppercase;
 color: var(--accent-color);
-margin-bottom: 30px;
 width: 696px;
 margin: 0 auto;
 display: block;
+ @media screen and (max-width: 1199px) {
+  @include font(26, 900, 1.62, 0.06);
+   padding: 118px 60px 30px 60px;
+   margin: 0px;
+   width: 100%;
+
+  }
 } 
 
 .picture__btn {
-  font-family: "Roboto" sans-serif;
-  cursor: pointer;
-  color: #212121;
-  letter-spacing: 0.06em;
-  padding: 10px 24px;
-  border: transparent;
-  transition: color 250ms var(--timing-function),
-  background-color 250ms var(--timing-function);
-  margin: 0 auto;
-  display: block;
-  margin-top: 30px;
+ @media screen and (max-width: 1199px) {
+padding: 10px 20px;
+margin-top: 0px;
+  }
 
   &:hover,
   &:focus {

@@ -1,7 +1,14 @@
+
 .about {
   display: flex;
   padding-top: 50px;
-  padding-bottom: 94px;
+  
+  @media screen and (max-width: 1199px){
+    display: none;
+  }
+}
+.about .container{
+  margin-bottom: 94px;
 }
 
 .about__item {

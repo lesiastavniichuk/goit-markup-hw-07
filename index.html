@@ -22,12 +22,12 @@
 
   <header class="header">
     <div class="header-container container">
-      <!----------------------LOGO---------------------->
+
 
       <a href="./index.html" lang="en" class="logo logo--dark-color header__logo link list">
         <span class="logo-accent">Web</span>Studio</a>
 
-      <!-----------------------NAV----------------------->
+
 
       <nav class="navigation">
         <ul class="navigation__list list">
@@ -45,7 +45,7 @@
         </ul>
       </nav>
 
-      <!------------------HEADER-CONTAKT------------------>
+
       <div class="connection">
 
         <a href="mailto:info@devstudio.com" class="connection__tel-mail link">
@@ -69,7 +69,7 @@
   <main>
     <!-- HERO -->
     <section class="hero">
-      <div class="picture container">
+      <div class="container">
         <h1 class="picture__title">Ефективні рішення для вашого бізнесу</h1>
 
         <button class="picture__btn btn" type="button" data-modal-open>
@@ -122,7 +122,9 @@
         <ul class="about list">
           <li class="about__item">
             <div class="about__thumb">
-              <img src="./img/box1.jpg" alt="розробка програмного забезпечення" width="370" height="294" />
+              <img srcset="./img/box1.jpg 1x,
+              ./img/box1-2x.jpg 2x" src="./img/box1.jpg" alt="розробка програмного забезпечення" width="370"
+                height="294" />
               <div class="about__actions">
                 <span class="about__text">Десктопні додатки</span>
               </div>
@@ -130,7 +132,9 @@
 
           <li class="about__item">
             <div class="about__thumb">
-              <img src="./img/box2.jpg" alt="тестування мобільного додатку" width="370" height="294" />
+              <img srcset="./img/box2.jpg 1x,
+              ./img/box2-2x.jpg 2x" src="./img/box2.jpg" alt="тестування мобільного додатку" width="370"
+                height="294" />
               <div class="about__actions">
                 <span class="about__text">Мобільні додатки</span>
               </div>
@@ -138,7 +142,8 @@
           </li>
           <li class="about__item">
             <div class="about__thumb">
-              <img src="./img/box3.jpg" alt="робота з палітрою кольорів" width="370" height="294" />
+              <img srcset="./img/box3.jpg 1x,
+              ./img/box3-2x.jpg 2x" src="./img/box3.jpg" alt="робота з палітрою кольорів" width="370" height="294" />
               <div class="about__actions">
                 <span class="about__text">Дизайнерські рішення</span>
               </div>
@@ -148,17 +153,28 @@
       </div>
     </section>
 
-    <!--------TEAM-------->
+    <!-- -----TEAM------ -->
 
     <section class="team">
-      <div class="team-container container">
-        <h2 class="our-team heading">Наша команда</h2>
+      <div class="container">
+        <h2 class="heading">Наша команда</h2>
 
         <ul class="member-team-list list">
 
           <li class="card-member">
             <div class="card">
-              <img src="./img/foto1.jpg" alt="Ігор Дем'яненко" width="270" />
+
+              <picture>
+                <source srcset="./img/foto1.jpg 1x,
+              ./img/foto1-2x.jpg 2x" media="min-width: 1200px">
+                <source srcset="./img/foto1-tab.jpg 1x,
+              ./img/foto1-tab-2x.jpg 2x" media="min-width: 768px">
+                <source srcset="./img/foto1-mob.jpg 1x,
+              ./img/foto1-mob-2x.jpg 2x" media="min-width: 480px">
+                <img srcset="./img/foto1.jpg 1x,
+                            ./img/foto1-2x.jpg 2x" src="./img/foto1.jpg" alt="Ігор Дем'яненко" width="100%" />
+              </picture>
+
               <h3 class="card__name">Ігор Дем'яненко</h3>
               <p lang="en" class="card__job-title">Product Designer</p>
               <ul class="social list">
@@ -199,7 +215,18 @@
 
           <li class="card-member">
             <div class="card">
-              <img src="./img/foto2.jpg" alt="Ольга Рєпіна" width="270" />
+
+              <picture>
+                <source srcset="./img/foto2.jpg 1x,
+              ./img/foto2-2x.jpg 2x" media="min-width: 1200px">
+                <source srcset="./img/foto2-tab.jpg 1x,
+              ./img/foto2-tab-2x.jpg 2x" media="min-width: 768px">
+                <source srcset="./img/foto2-mob.jpg 1x,
+              ./img/foto2-mob-2x.jpg 2x" media="min-width: 480px">
+                <img srcset="./img/foto2.jpg 1x,
+                ./img/foto2-2x.jpg 2x" src="./img/foto2.jpg" alt="Ольга Рєпіна" width="100%" />
+              </picture>
+
               <h3 class="card__name">Ольга Рєпіна</h3>
               <p lang="en" class="card__job-title">Frontend Developer</p>
               <ul class="social list">
@@ -234,9 +261,21 @@
               </ul>
             </div>
           </li>
+
           <li class="card-member">
             <div class="card">
-              <img src="./img/foto3.jpg" alt="Микола Тарасов" width="270" />
+
+              <picture>
+                <source srcset="./img/foto3.jpg 1x,
+              ./img/foto3-2x.jpg 2x" media="min-width: 1200px">
+                <source srcset="./img/foto3-tab.jpg 1x,
+              ./img/foto3-tab-2x.jpg 2x" media="min-width: 768px">
+                <source srcset="./img/foto3-mob.jpg 1x,
+              ./img/foto3-mob-2x.jpg 2x" media="min-width: 480px">
+                <img srcset="./img/foto3.jpg 1x,
+              ./img/foto3-2x.jpg 2x" src="./img/foto3.jpg" alt="Микола Тарасов" width="100%" />
+              </picture>
+
               <h3 class="card__name">Микола Тарасов</h3>
               <p lang="en" class="card__job-title">Marketing</p>
               <ul class="social list">
@@ -271,9 +310,21 @@
               </ul>
             </div>
           </li>
+
           <li class="card-member">
             <div class="card">
-              <img src="./img/foto4.jpg" alt="Михайло Єрмаков" width="270" />
+
+              <picture>
+                <source srcset="./img/foto4.jpg 1x,
+              ./img/foto4-2x.jpg 2x" media="min-width: 1200px">
+                <source srcset="./img/foto4-tab.jpg 1x,
+              ./img/foto4-tab-2x.jpg 2x" media="min-width: 768px">
+                <source srcset="./img/foto4-mob.jpg 1x,
+              ./img/foto4-mob-2x.jpg 2x" media="min-width: 480px">
+                <img srcset="./img/foto4.jpg 1x,
+                ./img/foto4-2x.jpg 2x" src="./img/foto4.jpg" alt="Михайло Єрмаков" width="100%" />
+              </picture>
+
               <h3 class="card__name">Михайло Єрмаков</h3>
               <p lang="en" class="card__job-title">UI Designer</p>
               <ul class="social list">
@@ -312,7 +363,7 @@
       </div>
     </section>
 
-    <!-----------CUSTOMERS----------->
+    <!-- ---------CUSTOMERS----------->
 
     <section class="customer">
       <div class="container">
