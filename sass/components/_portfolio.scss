@@ -71,7 +71,7 @@
 .worklist-element {
   border: 1px solid #eeeeee;
 
-  background: #ffffff;
+  background: var(--accent-color);
   
  @media  screen and (max-width:767px) {
   margin-bottom: 30px;

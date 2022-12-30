@@ -1,14 +1,24 @@
+
 .backdrop {
-  position: fixed;
+ position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
   transition: opasity 250ms var(--timing-function),
     visibility 250ms var(--timing-function);
+      @media screen and (min-width: 480px) {
+    padding: 93px 15px 94px 15px;
+    overflow-y: scroll;
+  }
+   @media screen and (min-width: 768px) {
+    padding: 208px 159px 207px 159px;
+  }
+   @media screen and (min-width: 1200px) {
+  width: 100%;
+  height: 100%;
+  }
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -20,20 +30,27 @@
   }
 }
 
+
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-color: #ffffff;
-  min-width: 528px;
-  min-height: 581px;
+  background-color: var(--accent-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   opacity: 1;
-  transform: scale(1) translate(-50%, -50%);
   transition: 250ms var(--timing-function);
   padding: 40px 40px 40px 40px;
+     @media screen and (max-width: 1199px) {
+    position: relative;
+   
+  }
+    @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 528px;
+    min-height: 581px;
+    transform: translate(-50%, -50%);
+  }
   &-close {
     position: absolute;
     top: 8px;
@@ -53,7 +70,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #757575;
+    color: var(--second-link-color);
   }
   &-head {
     @include font(20, 700, 1.15, 0.03);
@@ -64,9 +81,9 @@
 }
 
 .cross-modal-icons {
-  fill: #757575;
+  fill: var(--second-link-color);
   &:hover {
-    fill: #2196f3;
+    fill: var(--primary-link-color);
   }
 }
 
@@ -85,16 +102,16 @@
   outline: none;
   border-radius: 4px;
   padding: 12px 15px 12px 42px;
-  color: #757575;
+  color: var(--second-link-color);
   cursor: pointer;
   transition: border 250ms var(--timing-function);
   &:hover,
   &:focus {
-    border: 1px solid #2196f3;
+    border: 1px solid var(--primary-link-color);
   }
   &:focus + svg,
   &:hover + svg {
-    fill: #2196f3;
+    fill: var(--primary-link-color);
   }
   &::placeholder {
     @include font(12, 400, 1.17, 0.01);
@@ -114,7 +131,7 @@
     margin-bottom: 4px;
     font-family: "Roboto";
     font-style: normal;
-    color: #757575;
+    color: var(--second-link-color);
   }
 }
 
@@ -130,7 +147,7 @@
   outline: none;
   &:hover,
   &:focus {
-    border: 1px solid #2196f3;
+    border: 1px solid var(--primary-link-color);
   }
 }
 
@@ -140,7 +157,7 @@
   margin-bottom: 4px;
   font-family: "Roboto";
   font-style: normal;
-  color: #757575;
+  color: var(--second-link-color);
 }
 
 .modal-icons-cont {
@@ -174,12 +191,17 @@ label.modal-politik-label::before {
     display: inline;
     color: var(--primary-link-color);
     margin-left: 3px;
+    @media screen and (max-width: 1199px) {
+    @include font(12, 400, 1.17, 0.03);
   }
+}
   &-text {
     @include font(14, 400, 1.71, 0.03);
     display: inline;
-    color: #757575;
+    color: var(--second-link-color);
     margin-left: 3px;
+    @media screen and (max-width: 1199px) {
+    @include font(12, 400, 1.17, 0.03);
   }
   &:checked + label::before {
     border: none;
@@ -188,4 +210,5 @@ label.modal-politik-label::before {
     background-repeat: no-repeat;
     background-position: center;
   }
+}
 }

@@ -21,46 +21,102 @@
   <!----------------------HEADER---------------------->
 
   <header class="header">
-    <div class="header-container container">
+    <div class="container">
 
 
       <a href="./index.html" lang="en" class="logo logo--dark-color header__logo link list">
-        <span class="logo-accent">Web</span>Studio</a>
+        <span class="logo-accent">Web</span>Studio
+      </a>
 
 
 
       <nav class="navigation">
-        <ul class="navigation__list list">
-          <li>
-            <a class="navigation__link navigation__link__curreent link studia" href="./index.html">Студия</a>
-          </li>
 
-          <li>
-            <a class="navigation__link link portfolio" href="./portfolio.html">Портфолио</a>
-          </li>
 
-          <li>
-            <a class="navigation__link link" href="#contacts">Контакты</a>
-          </li>
-        </ul>
+        <div class="menu-container" id="menu-container" data-menu>
+
+
+
+          <ul class="navigation__list list">
+            <li>
+              <a class="navigation__link navigation__link__curreent link studia" href="./index.html">Студия</a>
+            </li>
+
+            <li>
+              <a class="navigation__link link portfolio" href="./portfolio.html">Портфолио</a>
+            </li>
+
+            <li>
+              <a class="navigation__link link contacts" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+
+
+          <div class="connection">
+            <div class="connect-tel">
+              <a href="tel:+380961111111" class="connection__tel-mail connection__tel link">
+                <svg width="10" height="16" class="connection__icon-mail">
+                  <use href="./img/icons-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a>
+            </div>
+            <div class="connect-mail">
+              <a href="mailto:info@devstudio.com" class="connection__tel-mail connection__mail link">
+                <svg width="16" height="12" class="connection__icon-mail">
+                  <use href="./img/icons-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </div>
+
+          </div>
+          <div class="connection-second">
+            <div class="connection-second__mail">
+              <a href="mailto:info@devstudio.com" class="connection__tel-mail connection__mail link">
+                <svg width="16" height="12" class="connection__icon-mail">
+                  <use href="./img/icons-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </div>
+
+            <div class="connection-second__mail__tel">
+              <a href="tel:+380961111111" class="connection__tel-mail connection__tel link">
+                <svg width="10" height="16" class="connection__icon-mail">
+                  <use href="./img/icons-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a>
+            </div>
+
+
+          </div>
+          <ul class="social-list list">
+            <li>
+              <a class="social-link link" href="#">Instagram</a>
+            </li>
+            <li>
+              <a class="social-link link" href="#">Twitter</a>
+            </li>
+            <li>
+              <a class="social-link link" href="#">Facebook</a>
+            </li>
+            <li>
+              <a class="social-link link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+          <svg width="24" aria-label="Перемикач мобільного меню" class="menu-button__icon">
+            <use class="icon-close" href="./img/icons-defs.svg#icon-close-mob-menu"></use>
+            <use class="icon-menu" href="./img/icons-defs.svg#icon-menu-mob-menu"></use>
+          </svg>
+        </button>
+
       </nav>
 
 
-      <div class="connection">
 
-        <a href="mailto:info@devstudio.com" class="connection__tel-mail link">
-          <svg width="16" height="12" class="connection__icon-mail">
-            <use href="./img/icons-defs.svg#icon-envelope"></use>
-          </svg>
-          info@devstudio.com
-        </a>
 
-        <a href="tel:+380961111111" class="connection__tel-mail link">
-          <svg width="10" height="16" class="connection__icon-mail">
-            <use href="./img/icons-defs.svg#icon-smartphone"></use>
-          </svg>
-          +38 096 111 11 11</a>
-      </div>
     </div>
   </header>
 
@@ -572,6 +628,7 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/navmenu.js"></script>
 </body>
 
 </html>

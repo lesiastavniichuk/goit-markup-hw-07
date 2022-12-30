@@ -1,113 +1,213 @@
-.header-container {
-  background-color: #ffffff;
-}
-
 header .container {
+  display: flex;
   @extend %flex-alighn;
-  position: relative;
   border: none;
+  background-color: var(--accent-color);
+
+  @media screen and (max-width: 767px) {
+    position: relative;
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: relative;
+  }
 }
-
-
-
-
-/* ----------------------LOGO---------------------- */
 
 .logo {
   &-accent {
     color: var(--primary-link-color);
   }
 }
+
 .header__logo {
-padding-top: 24px;
-padding-bottom: 25px;
-margin-right: 91px;
+  @media screen and (min-width: 480px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 24px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 93px;
+    font-size: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 91px;
+    font-size: 26px;
+  }
 }
 
-/* ----------------------NAV---------------------- */
-.navigation{
-  display: flex;
-}
 .navigation__list {
-  display: flex;
-  height: 80px;
-  &-cont {
-    @extend %flex-alighn;
-    height: 80px;
-    margin-right: 15px;
-  }
-  &-item {
-    margin-right: 30px;
-  }
-  &-item:last-child {
-    margin-right: 0;
+  @media screen and (min-width: 768px) {
+    position: relative;
+    display: flex;
   }
 }
 
 .navigation__link {
-  @include font(14, 500, 1.14, 0.02);
-  position: relative;
   display: block;
   text-decoration: none;
-  padding: 32px 0px;
   color: #212121;
   transition: color 250ms var(--timing-function);
+  @media screen and (min-width: 480px) {
+    @include font(40, 500, 1.18, 0.02);
+  }
+  @media screen and (min-width: 768px) {
+    @include font(14, 500, 1.14, 0.02);
+    padding: 32px 0px;
+  }
+  @media screen and (min-width: 1200px) {
+    @include font(14, 500, 1.14, 0.02);
+  }
   &:hover,
   &:focus {
     color: var(--primary-link-color);
   }
 }
 
-.navigation__link__curreent  {
-  color: var(--primary-link-color);
-  &.studia::after {
-    position: absolute;
-    align-items: center;
-    bottom: 0;
-    content: "";
-    display: block;
-    width: 48px;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--primary-link-color);
-    transition: 250ms var(--timing-function);
-  }
-  &.portfolio::after {
-    position: absolute;
-    align-items: center;
-    bottom: 0;
-    content: "";
-    display: block;
-    width: 76px;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--primary-link-color);
-    transition: 250ms var(--timing-function);
+.navigation__link__curreent {
+  @media screen and (min-width: 768px) {
+    color: var(--primary-link-color);
+    &.studia::after {
+      position: absolute;
+      align-items: center;
+      bottom: 0;
+      content: "";
+      display: block;
+      width: 48px;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--primary-link-color);
+      transition: 250ms var(--timing-function);
+    }
+    &.portfolio::after {
+      position: absolute;
+      align-items: center;
+      bottom: 0;
+      content: "";
+      display: block;
+      width: 76px;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--primary-link-color);
+      transition: 250ms var(--timing-function);
+    }
   }
 }
 
 .studia {
-  margin-right: 53px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
 }
 .portfolio {
-  margin-right: 50px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
 }
-
-
+.contacts {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 306px;
+    padding-bottom: 0px;
+  }
+}
 .connection {
-  display: flex;
-  position: absolute;
-  margin-left: auto;
-  right: 0;
-  align-items: center;
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.connection-second {
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    padding-top: 21px;
+    padding-right: 15px;
+    padding-bottom: 21px;
+    top: 0;
+    right: 0;
+    align-items: center;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
-.connection__tel-mail {
-  @extend %flex-alighn;
-  @include font(14, 500, 1.14, 0.02);
-  color: #757575;
-  margin-right: 30px;
+.connect-tel {
+  @media screen and (min-width: 480px) {
+    margin-bottom: 32px;
+  }
+}
+.connect-mail {
+  margin-bottom: 64px;
+}
+.connection-second__mail {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+    margin-right: 40px;
+  }
+}
+
+.connection__tel {
+  color: var(--second-link-color);
   transition: color 250ms var(--timing-function);
+  @media screen and (min-width: 480px) {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--primary-link-color);
+    margin-top: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    @include font(12, 500, 1.17, 0.02);
+    color: var(--second-link-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(14, 500, 1.14, 0.02);
+  }
+  &:hover,
+  &:focus {
+    color: var(--primary-link-color);
+  }
+}
+
+.connection__mail {
+  color: var(--second-link-color);
+  transition: color 250ms var(--timing-function);
+  @media screen and (min-width: 480px) {
+    @include font(24, 500, 1.17, 0.02);
+    margin-top: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    @include font(12, 500, 1.17, 0.02);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(14, 500, 1.14, 0.02);
+  }
   &:hover,
   &:focus {
     color: var(--primary-link-color);
@@ -115,10 +215,29 @@ margin-right: 91px;
 }
 
 .connection__icon-mail {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   fill: currentColor;
   margin-right: 10px;
 }
 
-.connection__tel-mail:last-child{
+.connection__tel-mail:last-child {
   margin-right: 0;
+}
+.social-list {
+  @media screen and (min-width: 480px) {
+    display: flex;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.social-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--primary-link-color);
+  margin-right: 20px;
 }

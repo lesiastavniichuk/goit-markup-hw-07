@@ -1,0 +1,54 @@
+.menu-button {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: inline-flex;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: var(--accent-color);
+    fill: #212121; 
+    cursor: pointer;
+    &:hover,
+    &:focus{
+      fill: var(--primary-link-color);
+    }
+
+    & .icon-close {
+      display: none;
+    }
+    &.is-open .icon-close {
+      display: block;
+    }
+    &.is-open .icon-menu {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+
+
+.menu-container {
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 480px;
+    height: 796px;
+    padding: 40px;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 
+    0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px 
+    rgba(0, 0, 0, 0.16);
+   
+  }
+  &.is-open {
+    display: block;
+  }
+}

@@ -53,7 +53,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #757575;
+    color: var(--second-link-color);
   }
   &-head {
     @include font(20, 700, 1.15, 0.03);
@@ -64,9 +64,9 @@
 }
 
 .cross-modal-icons {
-  fill: #757575;
+  fill: var(--second-link-color);
   &:hover {
-    fill: #2196f3;
+    fill: var(--primary-link-color);
   }
 }
 
@@ -85,16 +85,16 @@
   outline: none;
   border-radius: 4px;
   padding: 12px 15px 12px 42px;
-  color: #757575;
+  color: var(--second-link-color);
   cursor: pointer;
   transition: border 250ms var(--timing-function);
   &:hover,
   &:focus {
-    border: 1px solid #2196f3;
+    border: 1px solid var(--primary-link-color);
   }
   &:focus + svg,
   &:hover + svg {
-    fill: #2196f3;
+    fill: var(--primary-link-color);
   }
   &::placeholder {
     @include font(12, 400, 1.17, 0.01);
@@ -114,7 +114,7 @@
     margin-bottom: 4px;
     font-family: "Roboto";
     font-style: normal;
-    color: #757575;
+    color: var(--second-link-color);
   }
 }
 
@@ -130,7 +130,7 @@
   outline: none;
   &:hover,
   &:focus {
-    border: 1px solid #2196f3;
+    border: 1px solid var(--primary-link-color);
   }
 }
 
@@ -140,7 +140,7 @@
   margin-bottom: 4px;
   font-family: "Roboto";
   font-style: normal;
-  color: #757575;
+  color: var(--second-link-color);
 }
 
 .modal-icons-cont {
@@ -178,7 +178,7 @@ label.modal-politik-label::before {
   &-text {
     @include font(14, 400, 1.71, 0.03);
     display: inline;
-    color: #757575;
+    color: var(--second-link-color);
     margin-left: 3px;
   }
   &:checked + label::before {

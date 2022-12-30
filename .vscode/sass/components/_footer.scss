@@ -25,7 +25,7 @@ background-color: var(--foncolor);
   display: block;
   font-family: "Roboto";
   font-style: normal;
-  color: #ffffff;
+  color: var(--accent-color);
 }
 
 .contact__list > li:not(:last-child){
@@ -39,7 +39,7 @@ background-color: var(--foncolor);
 .footer-title {
   @include font(14, 700, 1.14, 0.03);
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--accent-color);
   margin-bottom: 20px;
 }
 
@@ -89,13 +89,13 @@ background-color: var(--foncolor);
   & > p {
     @include font(14, 700, 1.14, 0.03);
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--accent-color);
     margin-bottom: 20px;
   }
   &-btn > p {
     @include font(14, 700, 1.14, 0.03);
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--accent-color);
     margin-bottom: 20px;
     opacity: 0;
   }
@@ -104,11 +104,11 @@ background-color: var(--foncolor);
 .right-footer-input {
   width: 358px;
   padding: 15px;
-  background: #2f303a;
+  background: var(--foncolor);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  color: #ffffff;
+  color: var(--accent-color);
   &::placeholder {
     @include font(16, 400, 1.25, 0.03);
     align-items: center;
@@ -121,7 +121,7 @@ background-color: var(--foncolor);
   @include font(16, 700, 1.88, 0.06);
   margin-left: 12px;
   background-color: var(--primary-link-color);
-  color: #ffffff;
+  color: var(--accent-color);
   width: 200px;
   height: 50px;
   margin-top: 0;
