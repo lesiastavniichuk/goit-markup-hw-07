@@ -268,13 +268,6 @@ header .container {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .contacts {
-    margin-bottom: 306px;
-    padding-bottom: 0px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .connection {
     display: block;
@@ -447,13 +440,13 @@ header .container {
   background-size: cover;
   margin: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .hero .container {
     padding-bottom: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero_bg_mob.jpg);
   }
 }
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero .container {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero_bg_mob-2x.jpg);
   }
@@ -883,7 +876,7 @@ header .container {
 .footer .container {
   background-color: var(--foncolor);
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .footer .container {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -907,14 +900,21 @@ header .container {
   }
 }
 
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-container {
     display: block;
+    text-align: center;
+    margin-right: 165px;
+    margin-left: 76px;
+  }
+}
+
+.logoplace {
+  padding-bottom: 28px;
+}
+@media screen and (max-width: 767px) {
+  .logoplace {
+    text-align: center;
   }
 }
 
@@ -923,19 +923,10 @@ header .container {
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  text-align: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .footer__logo {
-    padding-left: 163px;
-    padding-right: 163px;
-    margin-bottom: 28px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer__logo {
-    padding-left: 115px;
-    margin-bottom: 28px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -949,18 +940,14 @@ header .container {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .contact {
     text-align: center;
-    padding-left: 110px;
-    padding-right: 110px;
   }
 }
 @media screen and (min-width: 768px) {
   .contact {
     text-align: center;
-    padding-left: 76px;
-    padding-right: 110px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -972,38 +959,32 @@ header .container {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .contact__list > li:not(:last-child) {
-    margin-bottom: 12px;
-  }
+.contact__list > li:not(:last-child) {
+  margin-bottom: 12px;
 }
 
-@media screen and (min-width: 480px) {
-  .footer-contact {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-    margin-bottom: 12px;
-  }
+.footer-contact {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 12px;
 }
 
-@media screen and (min-width: 480px) {
-  .footer-contact-mail,
+.footer-contact-mail,
 .footer-contact-tel {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-  }
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 @media screen and (min-width: 768px) {
@@ -1022,7 +1003,7 @@ header .container {
   text-transform: uppercase;
   color: #ffffff;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .footer-title {
     padding-top: 60px;
   }
@@ -1065,7 +1046,7 @@ header .container {
   align-items: center;
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .right-footer-input {
     width: 100%;
     margin-bottom: 20px;
@@ -1101,7 +1082,7 @@ header .container {
   color: #ffffff;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .footer-mail > p {
     margin-top: 60px;
   }
@@ -1122,7 +1103,7 @@ header .container {
   text-transform: uppercase;
   color: #ffffff;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .footer-mail-btn > p {
     display: none;
   }
@@ -1464,11 +1445,11 @@ label.modal-politik-label::before {
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 480px;
-    height: 796px;
+    width: 100vw;
+    height: 100vh;
     padding: 40px;
     background-color: var(--accent-color);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -1476,6 +1457,9 @@ label.modal-politik-label::before {
 }
 .menu-container.is-open {
   display: block;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
 .header {

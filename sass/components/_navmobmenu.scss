@@ -36,11 +36,11 @@
 .menu-container {
   @media screen and (max-width: 767px) {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 480px;
-    height: 796px;
+   width: 100vw;
+   height: 100vh;
     padding: 40px;
     background-color: var(--accent-color);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
@@ -48,5 +48,8 @@
   }
   &.is-open {
     display: block;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
   }
 }

@@ -1,7 +1,6 @@
-
 .footer .container {
   background-color: var(--foncolor);
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -10,9 +9,7 @@
   }
   @media screen and (min-width: 1200px) {
     padding-left: 15px;
-    // padding: 60px 215px;
     display: flex;
-    // width: 1600px;
   }
 }
 
@@ -23,25 +20,25 @@
 }
 
 .footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: block;
+    text-align: center;
+    margin-right: 165px;
+    margin-left: 76px;
+  }
+}
+
+.logoplace {
+  padding-bottom: 28px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
   }
 }
 
 .footer__logo {
   @include font(24, 700, 1.17, 0.03);
-  text-align: center;
-  @media screen and (min-width: 480px) {
-    padding-left: 163px;
-    padding-right: 163px;
-    margin-bottom: 28px;
-  }
-  @media screen and (min-width: 768px) {
-    padding-left: 115px;
-    margin-bottom: 28px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
   }
   @media screen and (min-width: 1200px) {
     @include font(26, 700, 1.19, 0.03);
@@ -51,15 +48,11 @@
 }
 
 .contact {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     text-align: center;
-    padding-left: 110px;
-    padding-right: 110px;
   }
   @media screen and (min-width: 768px) {
     text-align: center;
-    padding-left: 76px;
-    padding-right: 110px;
   }
   @media screen and (min-width: 1200px) {
     text-align: start;
@@ -70,37 +63,31 @@
 }
 
 .contact__list > li:not(:last-child) {
-  @media screen and (min-width: 480px) {
-    margin-bottom: 12px;
-  }
+  margin-bottom: 12px;
 }
 
 .footer-contact {
-  @media screen and (min-width: 480px) {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-    margin-bottom: 12px;
-  }
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 12px;
 }
 
 .footer-contact-mail,
 .footer-contact-tel {
-  @media screen and (min-width: 480px) {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-  }
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-social {
@@ -115,7 +102,7 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     padding-top: 60px;
   }
   @media screen and (min-width: 768px) {
@@ -136,7 +123,7 @@
     align-items: center;
     color: rgba(255, 255, 255, 0.6);
   }
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     width: 100%;
     margin-bottom: 20px;
   }
@@ -163,7 +150,7 @@
   text-transform: uppercase;
   color: #ffffff;
   padding-bottom: 20px;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199px) {
     margin-top: 60px;
   }
   @media screen and (min-width: 1200px) {
@@ -177,7 +164,7 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
   @media screen and (min-width: 1200px) {
