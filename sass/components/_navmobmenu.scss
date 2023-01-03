@@ -9,13 +9,15 @@
     padding: 0;
     border: none;
     background-color: var(--accent-color);
-    fill: #212121; 
+    fill: #212121;
     cursor: pointer;
     &:hover,
-    &:focus{
+    &:focus {
       fill: var(--primary-link-color);
     }
-
+    &__icon {
+      height: 40px;
+    }
     & .icon-close {
       display: none;
     }
@@ -31,8 +33,6 @@
   }
 }
 
-
-
 .menu-container {
   @media screen and (max-width: 767px) {
     display: none;
@@ -43,10 +43,8 @@
     height: 796px;
     padding: 40px;
     background-color: var(--accent-color);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 
-    0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px 
-    rgba(0, 0, 0, 0.16);
-   
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
   }
   &.is-open {
     display: block;

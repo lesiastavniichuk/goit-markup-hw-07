@@ -22,47 +22,103 @@
   <!----------------------HEADER---------------------->
 
   <header class="header">
-    <div class="header-container container">
-      
+    <div class="container">
+
 
       <a href="./index.html" lang="en" class="logo logo--dark-color header__logo link list">
-        <span class="logo-accent">Web</span>Studio</a>
+        <span class="logo-accent">Web</span>Studio
+      </a>
 
-      
+
 
       <nav class="navigation">
-       
-        <ul class="navigation__list list">
-          <li>
-            <a class="navigation__link  link studia" href="./index.html">Студия</a>
-          </li>
 
-          <li>
-            <a class="navigation__link navigation__link__curreent link portfolio" href="./portfolio.html">Портфолио</a>
-          </li>
 
-          <li>
-            <a class="navigation__link link" href="#contacts">Контакты</a>
-          </li>
-        </ul>
+        <div class="menu-container" id="menu-container" data-menu>
+
+
+
+          <ul class="navigation__list list">
+            <li>
+              <a class="navigation__link link studia" href="./index.html">Студия</a>
+            </li>
+
+            <li>
+              <a class="navigation__link navigation__link__curreent link portfolio"
+                href="./portfolio.html">Портфолио</a>
+            </li>
+
+            <li>
+              <a class="navigation__link link contacts" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+
+
+          <div class="connection">
+            <div class="connect-tel">
+              <a href="tel:+380961111111" class="connection__tel-mail connection__tel link">
+                <svg width="10" height="16" class="connection__icon-mail">
+                  <use href="./img/icons-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a>
+            </div>
+            <div class="connect-mail">
+              <a href="mailto:info@devstudio.com" class="connection__tel-mail connection__mail link">
+                <svg width="16" height="12" class="connection__icon-mail">
+                  <use href="./img/icons-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </div>
+
+          </div>
+          <div class="connection-second">
+            <div class="connection-second__mail">
+              <a href="mailto:info@devstudio.com" class="connection__tel-mail connection__mail link">
+                <svg width="16" height="12" class="connection__icon-mail">
+                  <use href="./img/icons-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </div>
+
+            <div class="connection-second__mail__tel">
+              <a href="tel:+380961111111" class="connection__tel-mail connection__tel link">
+                <svg width="10" height="16" class="connection__icon-mail">
+                  <use href="./img/icons-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a>
+            </div>
+
+
+          </div>
+          <ul class="social-list list">
+            <li>
+              <a class="social-link link" href="#">Instagram</a>
+            </li>
+            <li>
+              <a class="social-link link" href="#">Twitter</a>
+            </li>
+            <li>
+              <a class="social-link link" href="#">Facebook</a>
+            </li>
+            <li>
+              <a class="social-link link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+          <svg width="24" aria-label="Перемикач мобільного меню" class="menu-button__icon">
+            <use class="icon-close" href="./img/icons-defs.svg#icon-close-mob-menu"></use>
+            <use class="icon-menu" href="./img/icons-defs.svg#icon-menu-mob-menu"></use>
+          </svg>
+        </button>
+
       </nav>
 
-      
-      <div class="connection">
 
-        <a href="mailto:info@devstudio.com" class="connection__tel-mail link">
-          <svg width="16" height="12" class="connection__icon-mail">
-            <use href="./img/icons-defs.svg#icon-envelope"></use>
-          </svg>
-          info@devstudio.com
-        </a>
 
-        <a href="tel:+380961111111" class="connection__tel-mail link">
-          <svg width="10" height="16" class="connection__icon-mail">
-            <use href="./img/icons-defs.svg#icon-smartphone"></use>
-          </svg>
-          +38 096 111 11 11</a>
-      </div>
+
     </div>
   </header>
 
@@ -91,10 +147,16 @@
         <div class="worklist-element">
           <a class="link" href="#">
             <div class="produkt-thumb">
-              <img 
-              srcset="./img/img.jpg 1x,
-              ./img/img-2x.jpg 2x"
-              src="./img/img.jpg" alt="Технокряк" width="100%"/>
+
+              <picture>
+                <source srcset="./img/img.jpg 1x, ./img/img-2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./img/img-tab.jpg 1x, ./img/img-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./img/img-mob.jpg 1x, ./img/img-mob-2x.jpg 2x" media="(min-width: 480px)" />
+
+                <img srcset="./img/img.jpg 1x,
+                      ./img/img-2x.jpg 2x" src="./img/img.jpg" alt="Технокряк" width="100%" />
+              </picture>
+
               <div class="overlay">
                 <p class="overlay__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -114,10 +176,19 @@
         <div class="worklist-element">
           <a class="link" href="#">
             <div class="produkt-thumb">
-              <img 
-              srcset="./img/img1.jpg 1x,
-              ./img/img1-2x.jpg 2x"
-              src="./img/img1.jpg" alt="Постер New Orlean vs Golden Star" width="100%" />
+
+
+              <picture>
+                <source srcset="./img/img1.jpg 1x, ./img/img1-2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./img/img1-tab.jpg 1x, ./img/img1-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./img/img1-mob.jpg 1x, ./img/img1-mob-2x.jpg 2x" media="(min-width: 480px)" />
+
+                <img srcset="./img/img1.jpg 1x,
+                              ./img/img1-2x.jpg 2x" src="./img/img1.jpg" alt="Постер New Orlean vs Golden Star"
+                  width="100%" />
+              </picture>
+
+
               <div class="overlay">
                 <p class="overlay__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -137,10 +208,17 @@
         <div class="worklist-element">
           <a class="link" href="#">
             <div class="produkt-thumb">
-              <img 
-              srcset="./img/img2.jpg 1x,
-              ./img/img2-2x.jpg 2x"
-              src="./img/img2.jpg" alt="Ресторан Seafood" width="100%" />
+
+              <picture>
+                <source srcset="./img/img2.jpg 1x, ./img/img2-2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./img/img2-tab.jpg 1x, ./img/img2-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./img/img2-mob.jpg 1x, ./img/img2-mob-2x.jpg 2x" media="(min-width: 480px)" />
+
+                <img srcset="./img/img2.jpg 1x,
+                              ./img/img2-2x.jpg 2x" src="./img/img2.jpg" alt="Ресторан Seafood" width="100%" />
+              </picture>
+
+
               <div class="overlay">
                 <p class="overlay__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -160,10 +238,17 @@
         <div class="worklist-element">
           <a class="link" href="#">
             <div class="produkt-thumb">
-              <img 
-              srcset="./img/img8.jpg 1x,
-              ./img/img8-2x.jpg 2x"
-              src="./img/img8.jpg" alt="Проєкт Prime" width="100%" />
+
+              <picture>
+                <source srcset="./img/img8.jpg 1x, ./img/img8-2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./img/img8-tab.jpg 1x, ./img/img8-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./img/img8-mob.jpg 1x, ./img/img8-mob-2x.jpg 2x" media="(min-width: 480px)" />
+
+                <img srcset="./img/img8.jpg 1x,
+                ./img/img8-2x.jpg 2x" src="./img/img8.jpg" alt="Проєкт Prime" width="100%" />
+              </picture>
+
+
               <div class="overlay">
                 <p class="overlay__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -183,10 +268,17 @@
         <div class="worklist-element">
           <a class="link" href="#">
             <div class="produkt-thumb">
-              <img 
-              srcset="./img/img3.jpg 1x,
-              ./img/img3-2x.jpg 2x"
-              src="./img/img3.jpg" alt="Проєкт Boxes" width="100%" />
+
+              <picture>
+                <source srcset="./img/img3.jpg 1x, ./img/img3-2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./img/img3-tab.jpg 1x, ./img/img3-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./img/img3-mob.jpg 1x, ./img/img3-mob-2x.jpg 2x" media="(min-width: 480px)" />
+
+                <img srcset="./img/img3.jpg 1x,
+                ./img/img3-2x.jpg 2x" src="./img/img3.jpg" alt="Проєкт Boxes" width="100%" />
+              </picture>
+
+
               <div class="overlay">
                 <p class="overlay__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -206,10 +298,17 @@
         <div class="worklist-element">
           <a class="link" href="#">
             <div class="produkt-thumb">
-              <img 
-              srcset="./img/img4.jpg 1x,
-              ./img/img4-2x.jpg 2x"
-              src="./img/img4.jpg" alt="Inspiration has no Borders" width="100%" />
+
+              <picture>
+                <source srcset="./img/img4.jpg 1x, ./img/img4-2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./img/img4-tab.jpg 1x, ./img/img4-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./img/img4-mob.jpg 1x, ./img/img4-mob-2x.jpg 2x" media="(min-width: 480px)" />
+
+                <img srcset="./img/img4.jpg 1x,
+                ./img/img4-2x.jpg 2x" src="./img/img4.jpg" alt="Inspiration has no Borders" width="100%" />
+              </picture>
+
+
               <div class="overlay">
                 <p class="overlay__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -229,10 +328,17 @@
         <div class="worklist-element">
           <a class="link" href="#">
             <div class="produkt-thumb">
-              <img 
-              srcset="./img/img5.jpg 1x,
-              ./img/img5-2x.jpg 2x"
-              src="./img/img5.jpg" alt="Видання Limited Edition" width="100%" />
+
+              <picture>
+                <source srcset="./img/img5.jpg 1x, ./img/img5-2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./img/img5-tab.jpg 1x, ./img/img5-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./img/img5-mob.jpg 1x, ./img/img5-mob-2x.jpg 2x" media="(min-width: 480px)" />
+
+                <img srcset="./img/img5.jpg 1x,
+                ./img/img5-2x.jpg 2x" src="./img/img5.jpg" alt="Видання Limited Edition" width="100%" />
+              </picture>
+
+
               <div class="overlay">
                 <p class="overlay__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -252,10 +358,17 @@
         <div class="worklist-element">
           <a class="link" href="#">
             <div class="produkt-thumb">
-              <img 
-              srcset="./img/img6.jpg 1x,
-              ./img/img6-2x.jpg 2x"
-              src="./img/img6.jpg" alt="Проєкт LAB" width="100%" />
+
+              <picture>
+                <source srcset="./img/img6.jpg 1x, ./img/img6-2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./img/img6-tab.jpg 1x, ./img/img6-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./img/img6-mob.jpg 1x, ./img/img6-mob-2x.jpg 2x" media="(min-width: 480px)" />
+
+                <img srcset="./img/img6.jpg 1x,
+                ./img/img6-2x.jpg 2x" src="./img/img6.jpg" alt="Проєкт LAB" width="100%" />
+              </picture>
+
+
               <div class="overlay">
                 <p class="overlay__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -275,10 +388,16 @@
         <div class="worklist-element">
           <a class="link" href="#">
             <div class="produkt-thumb">
-              <img 
-              srcset="./img/img7.jpg 1x,
-              ./img/img7-2x.jpg 2x"
-              src="./img/img7.jpg" alt="Growing Business" width="100%" />
+
+              <picture>
+                <source srcset="./img/img7.jpg 1x, ./img/img7-2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./img/img7-tab.jpg 1x, ./img/img7-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./img/img7-mob.jpg 1x, ./img/img7-mob-2x.jpg 2x" media="(min-width: 480px)" />
+
+                <img srcset="./img/img7.jpg 1x,
+                  ./img/img7-2x.jpg 2x" src="./img/img7.jpg" alt="Growing Business" width="100%" />
+              </picture>
+
               <div class="overlay">
                 <p class="overlay__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -299,93 +418,100 @@
   </main>
   <!---------------------------FOOTER--------------------------->
   <footer class="footer">
-    <div class="footer-cont container">
-      <div class="footer-container">
-  
-        <a href="./index.html" lang="en" class="logo logo--light-color footer__logo link list">
-          <span class="logo-accent">Web</span>Studio</a>
-  
-  
-        <address class="contact">
-          <ul class="contact__list list">
-            <li>
-              <a href="https://goo.gl/maps/UvmpvFEawBBhTNfw9" class="contact__link link">м. Київ, пр-т Лесі Українки,
-                26</a>
+    <div class="container">
+      <div class="footer-info">
+        <div class="footer-container">
+
+          <a href="./index.html" lang="en" class="logo logo--light-color footer__logo link list">
+            <span class="logo-accent">Web</span>Studio</a>
+
+
+          <address class="contact">
+            <ul class="contact__list list">
+              <li>
+                <a href="https://goo.gl/maps/UvmpvFEawBBhTNfw9" class="contact__link footer-contact link">м. Київ, пр-т
+                  Лесі Українки,
+                  26</a>
+              </li>
+
+              <li>
+                <a href="mailto:info@devstudio.com"
+                  class="contact__link footer-contact-mail link">info@devstudio.com</a>
+              </li>
+
+              <li>
+                <a href="tel:+380961111111" class="contact__link footer-contact-tel link">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+
+        <div class="footer-social">
+          <p class="footer-title">приєднуйтесь</p>
+          <ul class="social list">
+            <li class="social__items">
+              <a href="#" class="social__link--dark-color link">
+                <svg width="20" height="20" class="social__icons">
+                  <use href="./img/icons-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-  
-            <li>
-              <a href="mailto:info@devstudio.com" class="contact__link link">info@devstudio.com</a>
+            <li class="social__items">
+              <a href="#" class="social__link--dark-color link">
+                <svg width="20" height="20" class="social__icons">
+                  <use href="./img/icons-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-  
-            <li>
-              <a href="tel:+380961111111" class="contact__link link">+38 096 111 11 11</a>
+            <li class="social__items">
+              <a href="#" class="social__link--dark-color link">
+                <svg width="20" height="20" class="social__icons">
+                  <use href="./img/icons-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__items">
+              <a href="#" class="social__link--dark-color link">
+                <svg width="20" height="20" class="social__icons">
+                  <use href="./img/icons-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
-  
-  
-      <div class="footer-social">
-        <p class="footer-title">приєднуйтесь</p>
-        <ul class="social list">
-          <li class="social__items">
-            <a href="#" class="social__link--dark-color link">
-              <svg width="20" height="20" class="social__icons">
-                <use href="./img/icons-defs.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__items">
-            <a href="#" class="social__link--dark-color link">
-              <svg width="20" height="20" class="social__icons">
-                <use href="./img/icons-defs.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__items">
-            <a href="#" class="social__link--dark-color link">
-              <svg width="20" height="20" class="social__icons">
-                <use href="./img/icons-defs.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__items">
-            <a href="#" class="social__link--dark-color link">
-              <svg width="20" height="20" class="social__icons">
-                <use href="./img/icons-defs.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-  
-  
+
       <div class="right-footer">
         <div class="right-footer-mail">
           <div class="footer-mail">
             <p>Підпишіться на розсилку</p>
-  
+
             <form>
               <input class="right-footer-input" type="email" name="mail" placeholder="E-mail" />
             </form>
           </div>
-  
+
           <div class="right-footer-mail">
             <div class="footer-mail-btn">
-              <p>Підпишіться на розсилку</p>
-  
+              <p>Підпишіться</p>
+
               <button type="submit" class="btn-submit-footer btn">
-                Підписатися
-                <svg width="24" height="24" class="btn-footer-icons">
-                  <use href="./img/icons-defs.svg#icon-icon-send"></use>
-                </svg>
+                <p>Підписатися
+                  <svg width="24" height="24" class="btn-footer-icons">
+                    <use href="./img/icons-defs.svg#icon-icon-send"></use>
+                  </svg>
+                </p>
               </button>
             </div>
           </div>
         </div>
       </div>
+
+
     </div>
   </footer>
+  <script src="./js/navmenu.js"></script>
 </body>
 
 </html>

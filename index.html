@@ -221,14 +221,13 @@
             <div class="card">
 
               <picture>
-                <source srcset="./img/foto1.jpg 1x,
-              ./img/foto1-2x.jpg 2x" media="min-width: 1200px">
-                <source srcset="./img/foto1-tab.jpg 1x,
-              ./img/foto1-tab-2x.jpg 2x" media="min-width: 768px">
-                <source srcset="./img/foto1-mob.jpg 1x,
-              ./img/foto1-mob-2x.jpg 2x" media="min-width: 480px">
+                <source srcset="./img/foto1.jpg 1x, ./img/foto1-2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./img/foto1-tab.jpg 1x, ./img/foto1-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./img/foto1-mob.jpg 1x, ./img/foto1-mob-2x.jpg 2x" media="(min-width: 480px)" />
+
                 <img srcset="./img/foto1.jpg 1x,
-                            ./img/foto1-2x.jpg 2x" src="./img/foto1.jpg" alt="Ігор Дем'яненко" width="100%" />
+                                            ./img/foto1-2x.jpg 2x" src="./img/foto1.jpg" alt="Ігор Дем'яненко"
+                  width="100%" />
               </picture>
 
               <h3 class="card__name">Ігор Дем'яненко</h3>
@@ -273,14 +272,22 @@
             <div class="card">
 
               <picture>
+                <source srcset="./img/foto2.jpg 1x, ./img/foto2-2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./img/foto2-tab.jpg 1x, ./img/foto2-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./img/foto2-mob.jpg 1x, ./img/foto2-mob-2x.jpg 2x" media="(min-width: 480px)" />
+              
+                <img srcset="./img/foto2.jpg 1x,
+                ./img/foto2-2x.jpg 2x" src="./img/foto2.jpg" alt="Ольга Рєпіна" width="100%" />
+              </picture>
+
+              <picture>
                 <source srcset="./img/foto2.jpg 1x,
               ./img/foto2-2x.jpg 2x" media="min-width: 1200px">
                 <source srcset="./img/foto2-tab.jpg 1x,
               ./img/foto2-tab-2x.jpg 2x" media="min-width: 768px">
                 <source srcset="./img/foto2-mob.jpg 1x,
               ./img/foto2-mob-2x.jpg 2x" media="min-width: 480px">
-                <img srcset="./img/foto2.jpg 1x,
-                ./img/foto2-2x.jpg 2x" src="./img/foto2.jpg" alt="Ольга Рєпіна" width="100%" />
+                
               </picture>
 
               <h3 class="card__name">Ольга Рєпіна</h3>
@@ -322,14 +329,12 @@
             <div class="card">
 
               <picture>
-                <source srcset="./img/foto3.jpg 1x,
-              ./img/foto3-2x.jpg 2x" media="min-width: 1200px">
-                <source srcset="./img/foto3-tab.jpg 1x,
-              ./img/foto3-tab-2x.jpg 2x" media="min-width: 768px">
-                <source srcset="./img/foto3-mob.jpg 1x,
-              ./img/foto3-mob-2x.jpg 2x" media="min-width: 480px">
+                <source srcset="./img/foto3.jpg 1x, ./img/foto3-2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./img/foto3-tab.jpg 1x, ./img/foto3-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./img/foto3-mob.jpg 1x, ./img/foto3-mob-2x.jpg 2x" media="(min-width: 480px)" />
+              
                 <img srcset="./img/foto3.jpg 1x,
-              ./img/foto3-2x.jpg 2x" src="./img/foto3.jpg" alt="Микола Тарасов" width="100%" />
+                              ./img/foto3-2x.jpg 2x" src="./img/foto3.jpg" alt="Микола Тарасов" width="100%" />
               </picture>
 
               <h3 class="card__name">Микола Тарасов</h3>
@@ -370,15 +375,14 @@
           <li class="card-member">
             <div class="card">
 
+
               <picture>
-                <source srcset="./img/foto4.jpg 1x,
-              ./img/foto4-2x.jpg 2x" media="min-width: 1200px">
-                <source srcset="./img/foto4-tab.jpg 1x,
-              ./img/foto4-tab-2x.jpg 2x" media="min-width: 768px">
-                <source srcset="./img/foto4-mob.jpg 1x,
-              ./img/foto4-mob-2x.jpg 2x" media="min-width: 480px">
-                <img srcset="./img/foto4.jpg 1x,
-                ./img/foto4-2x.jpg 2x" src="./img/foto4.jpg" alt="Михайло Єрмаков" width="100%" />
+                <source srcset="./img/foto4.jpg 1x, ./img/foto4-2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./img/foto4-tab.jpg 1x, ./img/foto4-tab-2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./img/foto4-mob.jpg 1x, ./img/foto4-mob-2x.jpg 2x" media="(min-width: 480px)" />
+              
+                  <img srcset="./img/foto4.jpg 1x,
+                                  ./img/foto4-2x.jpg 2x" src="./img/foto4.jpg" alt="Михайло Єрмаков" width="100%" />
               </picture>
 
               <h3 class="card__name">Михайло Єрмаков</h3>
@@ -475,66 +479,69 @@
   <!--------FOOTER-------->
 
   <footer class="footer">
-    <div class="footer-cont container">
-      <div class="footer-container">
+    <div class="container">
+      <div class="footer-info">
+        <div class="footer-container">
 
-        <a href="./index.html" lang="en" class="logo logo--light-color footer__logo link list">
-          <span class="logo-accent">Web</span>Studio</a>
+          <a href="./index.html" lang="en" class="logo logo--light-color footer__logo link list">
+            <span class="logo-accent">Web</span>Studio</a>
 
 
-        <address class="contact">
-          <ul class="contact__list list">
-            <li>
-              <a href="https://goo.gl/maps/UvmpvFEawBBhTNfw9" class="contact__link link">м. Київ, пр-т Лесі Українки,
-                26</a>
+          <address class="contact">
+            <ul class="contact__list list">
+              <li>
+                <a href="https://goo.gl/maps/UvmpvFEawBBhTNfw9" class="contact__link footer-contact link">м. Київ, пр-т
+                  Лесі Українки,
+                  26</a>
+              </li>
+
+              <li>
+                <a href="mailto:info@devstudio.com"
+                  class="contact__link footer-contact-mail link">info@devstudio.com</a>
+              </li>
+
+              <li>
+                <a href="tel:+380961111111" class="contact__link footer-contact-tel link">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+
+        <div class="footer-social">
+          <p class="footer-title">приєднуйтесь</p>
+          <ul class="social list">
+            <li class="social__items">
+              <a href="#" class="social__link--dark-color link">
+                <svg width="20" height="20" class="social__icons">
+                  <use href="./img/icons-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-
-            <li>
-              <a href="mailto:info@devstudio.com" class="contact__link link">info@devstudio.com</a>
+            <li class="social__items">
+              <a href="#" class="social__link--dark-color link">
+                <svg width="20" height="20" class="social__icons">
+                  <use href="./img/icons-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-
-            <li>
-              <a href="tel:+380961111111" class="contact__link link">+38 096 111 11 11</a>
+            <li class="social__items">
+              <a href="#" class="social__link--dark-color link">
+                <svg width="20" height="20" class="social__icons">
+                  <use href="./img/icons-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__items">
+              <a href="#" class="social__link--dark-color link">
+                <svg width="20" height="20" class="social__icons">
+                  <use href="./img/icons-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
-
-
-      <div class="footer-social">
-        <p class="footer-title">приєднуйтесь</p>
-        <ul class="social list">
-          <li class="social__items">
-            <a href="#" class="social__link--dark-color link">
-              <svg width="20" height="20" class="social__icons">
-                <use href="./img/icons-defs.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__items">
-            <a href="#" class="social__link--dark-color link">
-              <svg width="20" height="20" class="social__icons">
-                <use href="./img/icons-defs.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__items">
-            <a href="#" class="social__link--dark-color link">
-              <svg width="20" height="20" class="social__icons">
-                <use href="./img/icons-defs.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__items">
-            <a href="#" class="social__link--dark-color link">
-              <svg width="20" height="20" class="social__icons">
-                <use href="./img/icons-defs.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-
 
       <div class="right-footer">
         <div class="right-footer-mail">
@@ -548,18 +555,21 @@
 
           <div class="right-footer-mail">
             <div class="footer-mail-btn">
-              <p>Підпишіться на розсилку</p>
+              <p>Підпишіться</p>
 
               <button type="submit" class="btn-submit-footer btn">
-                Підписатися
-                <svg width="24" height="24" class="btn-footer-icons">
-                  <use href="./img/icons-defs.svg#icon-icon-send"></use>
-                </svg>
+                <p>Підписатися
+                  <svg width="24" height="24" class="btn-footer-icons">
+                    <use href="./img/icons-defs.svg#icon-icon-send"></use>
+                  </svg>
+                </p>
               </button>
             </div>
           </div>
         </div>
       </div>
+
+
     </div>
   </footer>
 
