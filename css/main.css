@@ -63,7 +63,7 @@ ul {
   fill: var(--accent-color);
 }
 
-.modal-politik-label, .btn-submit-footer, .right-footer-input, .customer__link, .social__link, .social, header .container, .social__link--light-color, .social__link--dark-color {
+.btn-submit-footer, .right-footer-input, .customer__link, .social__link, .social, header .container, .social__link--light-color, .social__link--dark-color {
   display: flex;
   align-items: center;
 }
@@ -150,7 +150,7 @@ header .container {
   color: var(--primary-link-color);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .header__logo {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -1145,64 +1145,51 @@ header .container {
 }
 
 .backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
   transition: opasity 250ms var(--timing-function), visibility 250ms var(--timing-function);
 }
-@media screen and (min-width: 480px) {
-  .backdrop {
-    padding: 93px 15px 94px 15px;
-    overflow-y: scroll;
-  }
-}
-@media screen and (min-width: 768px) {
-  .backdrop {
-    padding: 208px 159px 207px 159px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .backdrop {
-    width: 100%;
-    height: 100%;
-  }
-}
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
+
 .backdrop.is-hidden.modal {
   transform: scale(1.1) translate(-50%, -50%) scale(0.9);
   opacity: 0;
 }
 
 .modal {
-  background-color: var(--accent-color);
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   opacity: 1;
+  transform: scale(1) translate(-50%, -50%);
   transition: 250ms var(--timing-function);
-  padding: 40px 40px 40px 40px;
+  padding: 40px 40px 50px 40px;
 }
 @media screen and (max-width: 1199px) {
   .modal {
-    position: relative;
+    min-width: 450px;
+    min-height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     min-width: 528px;
     min-height: 581px;
-    transform: translate(-50%, -50%);
   }
 }
+
 .modal-close {
   position: absolute;
   top: 8px;
@@ -1217,28 +1204,31 @@ header .container {
   background-color: rgb(255, 255, 255);
   transition: 250ms var(--timing-function);
 }
+
 .modal-icons {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--second-link-color);
-}
-.modal-head {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #212121;
-  margin-bottom: 30px;
+  color: #757575;
 }
 
 .cross-modal-icons {
-  fill: var(--second-link-color);
+  fill: #757575;
 }
+
 .cross-modal-icons:hover {
-  fill: var(--primary-link-color);
+  fill: #2196F3;
+}
+
+.modal-head {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 30px;
 }
 
 .btn-submit {
@@ -1256,61 +1246,70 @@ header .container {
   outline: none;
   border-radius: 4px;
   padding: 12px 15px 12px 42px;
-  color: var(--second-link-color);
+  color: #757575;
   cursor: pointer;
   transition: border 250ms var(--timing-function);
 }
-.modal-input:hover, .modal-input:focus {
-  border: 1px solid var(--primary-link-color);
+
+.modal-input:hover,
+.modal-input:focus {
+  border: 1px solid #2196F3;
 }
-.modal-input:focus + svg, .modal-input:hover + svg {
-  fill: var(--primary-link-color);
+
+.modal-input-coment:hover,
+.modal-input-coment:focus {
+  border: 1px solid #2196F3;
 }
+
+.modal-input:focus + svg,
+.modal-input:hover + svg {
+  fill: #2196F3;
+}
+
 .modal-input::-moz-placeholder {
-  font-size: 12px;
   font-weight: 400;
-  line-height: 1.17;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+
 .modal-input:-ms-input-placeholder {
-  font-size: 12px;
   font-weight: 400;
-  line-height: 1.17;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+
 .modal-input::placeholder {
-  font-size: 12px;
   font-weight: 400;
-  line-height: 1.17;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-.modal-input-wrapper {
-  position: relative;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .form-field {
   margin-bottom: 28px;
 }
+
 .form-field label {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
   display: block;
   margin-bottom: 4px;
   font-family: "Roboto";
   font-style: normal;
-  color: var(--second-link-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
 }
 
 .modal-text {
-  font-size: 12px;
   font-weight: 400;
-  line-height: 1.17;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   resize: none;
@@ -1321,20 +1320,27 @@ header .container {
   border-radius: 4px;
   outline: none;
 }
-.modal-text:hover, .modal-text:focus {
-  border: 1px solid var(--primary-link-color);
+
+.modal-text:hover,
+.modal-text:focus {
+  border: 1px solid #2196F3;
+}
+
+.modal-input-wrapper {
+  position: relative;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .label-coment {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
   display: block;
   margin-bottom: 4px;
   font-family: "Roboto";
   font-style: normal;
-  color: var(--second-link-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
 }
 
 .modal-icons-cont {
@@ -1347,7 +1353,9 @@ header .container {
 
 /* -----------checkbox----------- */
 .modal-politik-label {
+  display: flex;
   margin-left: 12px;
+  align-items: center;
 }
 
 label.modal-politik-label::before {
@@ -1359,51 +1367,38 @@ label.modal-politik-label::before {
   margin-right: 7px;
 }
 
-.checkbox {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.checkbox-link {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  display: inline;
-  color: var(--primary-link-color);
-  margin-left: 3px;
-}
-@media screen and (max-width: 1199px) {
-  .checkbox-link {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-  }
-}
-.checkbox-text {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  display: inline;
-  color: var(--second-link-color);
-  margin-left: 3px;
-}
-@media screen and (max-width: 1199px) {
-  .checkbox-text {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-  }
-}
-.checkbox-text:checked + label::before {
+.checkbox:checked + label::before {
   border: none;
   background-color: var(--primary-link-color);
   background-image: url(../img/galochka.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.checkbox-link {
+  display: inline;
+  color: var(--primary-link-color);
+  margin-left: 3px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.checkbox-text {
+  display: inline;
+  color: #757575;
+  margin-left: 3px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 @media screen and (max-width: 767px) {
@@ -1416,6 +1411,7 @@ label.modal-politik-label::before {
     margin: 0;
     padding: 0;
     border: none;
+    z-index: 99;
     background-color: var(--accent-color);
     fill: #212121;
     cursor: pointer;
@@ -1451,6 +1447,7 @@ label.modal-politik-label::before {
     width: 100vw;
     height: 100vh;
     padding: 40px;
+    z-index: 9;
     background-color: var(--accent-color);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   }
